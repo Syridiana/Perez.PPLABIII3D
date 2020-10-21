@@ -18,24 +18,6 @@ const btnEliminar = document.getElementById("btnEliminar");
 
 
 
-
-
-
-/* function actualizarPersona() {
-
-
-}
-
-
-
-function eliminarPersona() {
-
-
-}
- */
-
-
-
 let listaAnuncios = [{
     "id": 1,
     "titulo": "GMC",
@@ -232,7 +214,17 @@ function inicializarManejadores() {
 
 function altaAnuncio() {
 
-    const lastIndex = listaAnunciosLS.length + 1;
+    let maxIndex = 0;
+
+    listaAnunciosLS.forEach(element => {
+        if(element['id'] > maxIndex)
+        {
+            maxIndex = element['id'];
+        }
+    
+});
+
+maxIndex += 1;
 
     const titulo = document.getElementById("txtTitulo").value;
     const descripcion = document.getElementById("txtDescripcion").value;
@@ -243,7 +235,7 @@ function altaAnuncio() {
     const potencia = document.getElementById("txtPotencia").value;
 
 
-    const nuevoAnuncio = new Anuncio_Auto(lastIndex, titulo, transaccion, descripcion, precio, puertas, km, potencia);
+    const nuevoAnuncio = new Anuncio_Auto(maxIndex, titulo, transaccion, descripcion, precio, puertas, km, potencia);
 
     return nuevoAnuncio;
 }

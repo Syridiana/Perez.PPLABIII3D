@@ -7,30 +7,46 @@
     font-family: 'Lato', sans-serif;
 }
 
-@font-face
-{
-    font-family: "Begum-medium";
-    src: url(../font/Begum-Medium.otf)
+body{
+    background-color: snow;
 }
-
 button{
     margin: 10px;
-    background-color: lightskyblue;
+    background-color: #A8DADC;
 }
 
 button:hover{
-    background-color: silver;
+    background-color: #E63946;
     cursor: pointer;
 }
 
 
 tbody tr:hover{
-    background-color: skyblue;
+    background-color: #A8DADC;
     cursor: pointer;
 }
 
 .datosImg img{
     width: 40px;
+
+}
+
+.alinear{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#fieldsetPrincipal{
+    padding: 40px;
+    width: 60vw;
+
+}
+
+.divForm{
+    display: flex;
+    flex-direction: row;
+    ustify-content: space-around;
 }
 
 nav ul{
@@ -55,7 +71,7 @@ li a{
 }
 
 header{
-    background-color: cadetblue;
+    background-color: #1d3557;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,7 +81,7 @@ header{
 }
 
 footer{
-    background-color: cadetblue;
+    background-color: #1D3557;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +91,7 @@ footer{
 
 h1{
     font-weight: 900;
-    color: #fff;
+    color: #F1FAEE;
     font-family: 'Crimson Text', serif;
     font-style: italic;
     font-weight: lighter;
@@ -89,15 +105,16 @@ h1{
 }
 
 footer p{
-    color: white;
+    color: #E9F3E9;
 }
 
 thead tr{
-    background-color: cornflowerblue;
+    background-color: #E63946;
 }
 
 #fotoPrincipal{
-    margin: 20px;
+    margin: -40px 0px 20px 0px;
+    width: 100vw;
 }
 
 #logo{
@@ -107,10 +124,12 @@ thead tr{
 
 nav a{
     text-decoration: none;
-    color: #fff;
+    color: #F1FAEE;
     font-size: 1.2em;
 
 }
+
+
 
 #logoNavWrapper{
     display: flex;
@@ -167,10 +186,18 @@ h3{
 }
 
 h2{
-    padding-top: 20px;
+    font-size:2em;
+    color: #1D3557;
+    padding: 20px 0px 50px 0px;
 }
 
-
+#transacciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
 
 
 
@@ -183,14 +210,22 @@ main{
 @media (min-width: 800px)
 {
     header{
-        height: 25vh;
-        padding: 10px;
+        height: 15vh;
+        padding: 5px 40px 40px 40px;
+        position: sticky;
+        top: 0;
+        
     }
     #logoNavWrapper{
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
-        padding: 20px;
+    }
+
+    h2{
+        font-size:5em;
+
     }
 
     footer{
@@ -207,7 +242,7 @@ main{
     }
 
     nav ul{
-        padding: 0;
+        padding: 0px 0px 20px 0px;
         flex-direction: row;
     }
 

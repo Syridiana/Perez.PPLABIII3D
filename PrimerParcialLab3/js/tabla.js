@@ -106,11 +106,3 @@ function agregarManejadorTR(tr){
 
 }
 
-/* function agregarManejadorTD(td){
-    if(td){
-        td.addEventListener('click', function(e) {
-            alert("Hiciste click en un td"); 
-        });
-    }
-
-} */
